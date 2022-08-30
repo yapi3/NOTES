@@ -1,0 +1,18 @@
+public class Gear {
+   String type;
+   String name;
+   String rarity;
+   float weight;
+   String description;
+
+   public void showGearDescription() {
+    System.out.println("Description: " + description);
+   }
+
+   public void showAllAttributes() {
+    System.out.println("Name: " + name);
+    System.out.println("Type: " + type);
+    System.out.println("Rarity: " + rarity);
+    System.out.println("Weight: " + weight);
+}
+}
