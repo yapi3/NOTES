@@ -1,0 +1,94 @@
+public class App {
+    public static void main(String[] args) {
+
+        // Character Class
+        Character knight = new Character();
+
+        knight.strength = 10;
+        knight.agility = 5;
+        knight.intelligence = 0;
+        knight.name = "Chen";
+        knight.sayMyName();
+        knight.showAllAttributes();
+
+        Character mage = new Character();
+
+        mage.strength = 0;
+        mage.agility = 5;
+        mage.intelligence = 10;
+        mage.name = "Akasha";
+        mage.sayMyName();
+        mage.showAllAttributes();
+
+        Character thief = new Character();
+
+        thief.strength = 5;
+        thief.agility = 10;
+        thief.intelligence = 0;
+        thief.name = "Gondar";
+        thief.sayMyName();
+        thief.showAllAttributes();
+
+        // Enemy Class
+        Enemy boss = new Enemy();
+
+        boss.damage = 50;
+        boss.health = 500;
+        boss.armor = 100;
+        boss.hasMagicImmunity = true;
+        boss.name = "Roshan";
+        boss.enemyDialogue();
+        boss.showAllAttributes();
+
+        Enemy skeleton = new Enemy();
+
+        skeleton.damage = 5;
+        skeleton.health = 10;
+        skeleton.armor = 5;
+        skeleton.hasMagicImmunity = false;
+        skeleton.name = "Common Skeleton Warrior";
+        skeleton.enemyDialogue();
+        skeleton.showAllAttributes();
+
+        Enemy dragon = new Enemy();
+
+        dragon.damage = 40;
+        dragon.health = 400;
+        dragon.armor = 75;
+        dragon.hasMagicImmunity = false;
+        dragon.name = "Ancient Wyvern";
+        dragon.enemyDialogue();
+        dragon.showAllAttributes();
+
+        Weapon Rifle = new Weapon();
+
+        Rifle.name = "Sniper Rifle";
+        Rifle.damage = 357;
+        Rifle.weight = 5.0f;
+        Rifle.rarity = "legendary";
+        Rifle.description = "Sniper rifle owned by Pia";
+
+        Rifle.displayWeaponDescription();
+
+        Gear Helmet = new Gear();
+
+        Helmet.type = "helm";
+        Helmet.name = "Pia's helm";
+        Helmet.rarity = "Common";
+        Helmet.weight = 3.5f;
+        Helmet.description = "A common helm owned by Pia";
+
+        Helmet.showGearDescription();
+
+        Gear BodyArmor = new Gear ();
+        
+        BodyArmor.type = "Body Armor";
+        BodyArmor.name = "Pia's Armor";
+        BodyArmor.rarity = "rare";
+        BodyArmor.weight = 10.0f;
+        BodyArmor.description = "A rare armor owned by Pia";
+
+        BodyArmor.showGearDescription();
+        BodyArmor.showAllAttributes();
+    }
+}
