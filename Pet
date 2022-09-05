@@ -1,0 +1,22 @@
+public class Pet {
+   
+    String name;
+    int trustlevel;
+    Boolean isAdopted;
+    String birthday;
+
+    public void sayMyName() {
+        System.out.println("Hello I am " + name);
+    }
+    public void sayMyTrustlevel() {
+        System.out.println("My trust level is " + trustlevel);
+    }
+    public void showAdoptedstuatus() {
+        System.out.println("Adopted: " + isAdopted);
+    }
+    public void sayMyBirthday() {
+        System.out.println("My birthday is " + birthday);
+    }
+}
+
+// char = 'M'
